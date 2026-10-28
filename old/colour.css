@@ -1,0 +1,76 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: pink;
+    text-align: center;
+}
+
+/* Main container */
+.con {
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Heading */
+.h1 {
+    background-color: #E1BEE7;
+    color: #6A1B9A;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+    color: white;
+    font-size: clamp(18px, 4vw, 30px);
+    margin-bottom: 20px;
+}
+
+/* Button */
+button {
+    background-color: #9C27B0;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #7B1FA2;
+}
+
+/* Work section */
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Mobile fix */
+@media (max-width: 600px) {
+    .con {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
